@@ -1,0 +1,16 @@
+<h1>Score multiple words at a time using this machine!</h1>
+
+<form action="" method="post" accept-charset="utf-8">
+	<h3><label for="words">Enter Words Here: </label></h3>
+	<textarea name="words" rows="10" cols="50" id="words" >Put all words separated by commas.</textarea>
+	<br>
+	<input type="submit" value="Score My Words!">
+</form>
+
+<% if @words_scored %> 
+	<h3>Your total score is <%= @total %>. </h3>
+	<h3>Here is your score broken down: </h3>
+	<% @list.each do |word_score| %> 
+		<h3>The score of "<%= word_score[0]%>" is <%= word_score[1] %></h3>
+	<% end %> 
+<% end %> 

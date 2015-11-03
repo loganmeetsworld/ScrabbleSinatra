@@ -1,1 +1,12 @@
-<h1>Coming soon!</h1>
+<h1>Calculate a Single World Score</h1>
+<h3>Here you can enter a single word and get your score. Please, enter your word in this form:</h3>
+
+<form action="" method="post" accept-charset="utf-8">
+	<label for="word">Enter Word: </label>
+	<input type="text" name="word" value="Enter Word Here!" id="word">
+	<input type="submit" value="Score my Word!">
+</form>
+
+<% if @word_scored %> 
+	<h3>The score of "<%= @word %>" is: <%= @score %></h3>
+<% end %> 
