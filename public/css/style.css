@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|News+Gothic|Inconsolata|Droid+Sans|Raleway');
+
+body {
+  background-color: #F0DA91;
+  font-family: 'News Cycle', Lato, sans-serif;
+  text-align: center;
+}
+
+h1, h3 {
+  color: #D40000;
+}
+
+a:link {color: #D40000}
+a:visited {color: #AF4213}
+
+.main-nav {
+  text-align:center;
+  font-size: 30px;
+  color:#D40000;
+  height: 70px;
+  width: 100%;
+  margin-top: 0px
+  margin-bottom: 0px;
+}
